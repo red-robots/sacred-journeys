@@ -1,0 +1,776 @@
+/*
+Theme Name: Sacred Journeys
+Theme URI: http://bellaworksweb.com
+Author: the BellaWorks team
+Author URI: http://bellaworksweb.com/
+Description: Responsive for Bellaworks
+
+*/
+
+/* fonts */
+
+/* 
+
+font-family: 'Sintony', sans-serif;
+
+font-family: 'Crimson Text', serif;
+
+*/
+
+
+/* =Reset
+-------------------------------------------------------------- */
+
+
+
+
+/* = Repeatable patterns
+-------------------------------------------------------------- */
+
+
+
+/* Assistive text */
+.assistive-text,
+.site .screen-reader-text {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+.main-navigation .assistive-text:focus {
+	background: #fff;
+	border: 2px solid #333;
+	border-radius: 3px;
+	clip: auto !important;
+	color: #000;
+	display: block;
+	font-size: 12px;
+	padding: 12px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+
+
+
+/* = Navigation
+-------------------------------------------------------------- */
+
+.sub-menu li {
+	text-transform: capitalize!important;
+	font-weight: normal!important;
+	font-size: 14px!important;
+	border-right: 0px solid #748FA2!important;
+	border-bottom: 0px solid #748FA2!important;	
+}
+
+
+.main-navigation {
+	margin-top: 24px;
+	text-align: center;
+}
+.main-navigation li {
+
+	font-size: 16px;
+	line-height: 1.42857143;
+}
+.main-navigation a {
+	color: #5e5e5e;
+	text-decoration: none;
+}
+.main-navigation a:hover {
+	color: #00303F;
+		text-decoration: none;
+}
+.main-navigation ul.nav-menu,
+.main-navigation div.nav-menu > ul {
+	display: none;
+	margin-bottom: 14px;
+}
+.main-navigation ul.nav-menu.toggled-on,
+.menu-toggle {
+	display: inline-block;
+}
+
+/* Banner */
+section[role="banner"] {
+	margin-bottom: 48px;
+}
+
+
+
+
+/* = Pages and Page Templates
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-navigation a {
+	font-weight: bold;
+}
+
+.sub-menu {
+	font-weight: normal!important;
+}
+
+
+/* pagination */
+
+
+/* end pagination */
+
+
+
+/* =Plugins
+----------------------------------------------- */
+
+
+#home-wrapper {
+	float: left;
+	width: 100%;
+	background-color: #ffffff;
+	
+}
+
+/* mobile */
+
+#logo {
+	width: 290px;
+	height: 72px;
+	position: relative;
+	left: inherit;
+	top: inherit;
+		text-align: left;
+		z-index: inherit;
+	float: left;
+}
+
+#navigation {
+	width: 100%;
+	float: left;
+}
+
+	
+	body {
+	border-top: 5px solid #003040;
+	background-color: #F5F6FA;
+	}
+	
+
+/* .blogentry p a {
+	width: 150px;
+	padding: 10px;
+	border: 2px solid #462463;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 15px;
+	
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.blogentry p a:link { color: #ffffff; background-color: #B39BCA; }
+.blogentry p a:visited { color: #ffffff; background-color: #B39BCA; }
+.blogentry p a:hover { color: #00303F; background-color: #748FA2; } */
+
+/* =Media queries
+-------------------------------------------------------------- */
+
+/* Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See http://core.trac.wordpress.org/ticket/25888.
+ */
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+/* Minimum width of 600 pixels. - ipad */
+@media screen and (min-width: 600px) {
+	
+.main-navigation a {
+	font-weight: normal;
+}
+
+.sub-menu {
+	font-weight: normal!important;
+}
+	
+	.event-info {
+		padding-bottom: 50px;
+	}
+	
+.event-row {
+    padding-bottom: 0px;
+    float: left;
+    width: 100%;
+}
+	
+	.entry-content img {
+    width: auto;
+}
+	
+#banner-photo-sub {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    margin-top: 10px;
+    float: left;
+    position: relative;
+}
+
+	#banner-photo-sub img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+	
+	#footer-text {
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #ffffff;
+    font-size: 35px;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    padding-top: 105px;
+    padding-bottom: 60px;
+	padding-left: 0px;
+}
+	
+	.site-info-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+	
+	.home-blogentry {
+		padding-bottom: 0px;
+	}
+	
+	.home-blogentry img {
+	float: left;
+	margin-right: 40px;
+	width: auto;
+}
+	
+	#row1-header {
+    padding-top: 55px;
+    width: 100%;
+    float: left;
+    padding-bottom: 30px;
+}
+	
+	#banner-photo img {
+	width: 180%;
+	height: auto;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+	
+	#banner-photo {
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	margin-top: 10px;
+	float: left;
+	position: relative;
+}
+	
+/* ipad */
+
+#banner-wrapper {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    z-index: 10000;
+}
+
+#banner-text {
+    width: 90%;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 26px;
+    color: #FFFFFF;
+    line-height: 1.2;
+    text-align: center;
+}
+
+#logo {
+	width: 290px;
+	height: 72px;
+	position: absolute;
+	left: 0px;
+	top: 10px;
+		text-align: left;
+		z-index: 10000;
+}
+	
+	#row1-box2 {
+		width: 30%;
+	margin-left: 3%;
+		height: auto;
+	float: left;
+
+		margin-bottom: 10px;	
+}
+
+#row1-box3 {
+		width: 25%;
+	margin-left: 3%;
+	float: right;
+	min-height: 200px;
+	background-color: #c0c0c0;
+		margin-bottom: 10px;
+		margin-top: 30px;
+}
+	
+	.sub-menu li {
+	text-transform: capitalize!important;
+	font-weight: normal!important;
+	font-size: 14px!important;
+	border-right: 0px solid #748FA2!important;
+	border-bottom: 0px solid #748FA2!important;	
+}
+
+
+.main-navigation li {
+
+	font-size: 16px;
+	line-height: 1.42857143;
+}	
+
+	
+	.author-avatar {
+		float: left;
+		margin-top: 8px;
+	}
+	.author-description {
+		float: right;
+		width: 80%;
+	}
+	.site {
+		margin: 0 auto;
+		max-width: 960px;
+		overflow: hidden;
+	}
+	.site-content {
+	    max-width: 1100px;
+		margin: 0 auto;
+		background-color: #ffffff;
+		    box-shadow: 0 0 14px #AAAAAA;
+    -webkit-box-shadow: 0 0 14px #AAAAAA;
+    -moz-box-shadow: 0 0 14px #AAAAAA;
+	}
+	
+
+	
+	.entry-content {
+		    margin-bottom: 30px;
+		padding: 30px;
+		float: left;
+		background-color: #ffffff;
+    box-shadow: 0 0 14px #AAAAAA;
+    -webkit-box-shadow: 0 0 14px #AAAAAA;
+    -moz-box-shadow: 0 0 14px #AAAAAA;
+	}
+	
+	
+	.events-entry-content {
+		    margin-bottom: 30px;
+		padding: 30px;
+		float: left;
+	}
+	
+#single-event .entry-content {
+		margin-bottom: 0px!important;
+		padding: 0px!important;
+	}
+	
+#entry-event-image {
+	float: left;
+    margin-top: 5px;
+    margin-right: 40px;
+	margin-bottom: 20px;
+}
+
+.entry-content p {
+	padding-bottom: 10px;
+}
+
+.resource {
+	width: 100%;
+	float: left;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+	
+		#content-wrapper {
+		width: 100%;
+		float: left;
+		margin-top: 10px;
+		padding-top: 40px;
+	}
+	
+	
+	body.template-front-page .site-content,
+	body.attachment .site-content,
+	body.full-width .site-content {
+		width: 100%;
+	}
+	.widget-area {
+		float: right;
+		width: 26.041666667%;
+	}
+	.site-header h1,
+	.site-header h2 {
+		text-align: left;
+	}
+	.site-header h1 {
+		font-size: 26px;
+		line-height: 1.846153846;
+		margin-bottom: 0;
+	}
+	.main-navigation ul.nav-menu,
+	.main-navigation div.nav-menu > ul {
+
+		display: inline-block !important;
+		text-align: right;
+		width: 100%;
+		z-index: 1000;
+	}
+	.main-navigation ul {
+		margin: 0;
+		text-indent: 0;
+	}
+	.main-navigation li a,
+	.main-navigation li {
+		display: inline-block;
+		text-decoration: none;
+	}
+	.main-navigation li a {
+		border-bottom: 0;
+		color: #003040;
+		white-space: nowrap;
+	font-size: 16px;
+			padding-right: 5px;
+			padding-bottom: 10px;
+	}
+	
+	.main-navigation li:last-child a {
+	  border-right: 0px solid #748FA2;
+
+}
+
+	.main-navigation li a:hover {
+		color: #748FA2;
+
+	}
+	.main-navigation li {
+		    margin: 0 40px 0 0px;
+		position: relative;
+		z-index: 11000;
+
+	}
+	.main-navigation li ul {
+		display: none;
+		margin: 0 0 0 -15px;
+		padding: 0;
+		position: absolute;
+		top: 100%;
+		z-index: 1000;
+	}
+	.main-navigation li ul ul {
+		top: 0;
+		left: 100%;
+	}
+	.main-navigation ul li:hover > ul {
+		border-left: 0;
+		display: block;
+	}
+	.main-navigation li ul li a {
+		background: #efefef;
+		border-bottom: 1px solid #ededed;
+		display: block;
+		font-size: 13px;
+		line-height: 2.181818182;
+		padding: 8px 10px;
+		width: 180px;
+		white-space: normal;
+		text-align: left;
+	}
+	.main-navigation li ul li a:hover {
+		background: #e3e3e3;
+		color: #444;
+	}
+	.main-navigation .current-menu-item > a,
+	.main-navigation .current-menu-ancestor > a,
+	.main-navigation .current_page_item > a,
+	.main-navigation .current_page_ancestor > a {
+		color: #636363;
+		font-weight: bold;
+	}
+	.menu-toggle {
+		display: none;
+	}
+	.entry-header .entry-title {
+		font-size: 22px;
+	}
+	#respond form input[type="text"] {
+		width: 46.333333333%;
+	}
+	#respond form textarea.blog-textarea {
+		width: 79.666666667%;
+	}
+	.commentlist .children {
+		margin-left: 48px;
+	}
+}
+
+/* Minimum width of 960 pixels. - desktop */
+@media screen and (min-width: 960px) {
+	
+		#banner-photo img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+	
+	#banner-photo {
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	margin-top: 10px;
+	float: left;
+	position: relative;
+}
+
+
+
+#banner-text {
+    width: 925px;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 26px;
+    color: #FFFFFF;
+    line-height: 1.2;
+    text-align: center;
+}
+	
+#banner-wrapper {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 180px;
+    left: 0px;
+    z-index: 10000;
+	/* screen */
+}	
+	
+		.event-info {
+		padding-bottom: 0px;
+	}
+	
+.event-row {
+    padding-bottom: 7px;
+    float: none;
+    width: auto;
+}
+	
+	.sub-menu li {
+	text-transform: capitalize!important;
+	font-weight: normal!important;
+	font-size: 14px!important;
+	border-right: 0px solid #748FA2!important;
+	border-bottom: 0px solid #748FA2!important;	
+}
+
+
+.main-navigation li {
+
+	font-size: 16px;
+	line-height: 1.42857143;
+
+}	
+
+
+	body .site {
+		margin-top: 0px;
+		margin-bottom: 48px;
+	}
+	
+	.site {
+				max-width: 1100px;
+
+	}
+	
+
+	
+	body.custom-background-empty {
+		background-color: #fff;
+	}
+	body.custom-background-empty .site,
+	body.custom-background-white .site {
+		padding: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		box-shadow: none;
+	}
+	
+
+	
+
+
+
+#logo-space {
+	width: 236px;
+	height: 100px;
+	float: left;
+}
+
+
+
+
+
+#navigation {
+	width: 560px;
+	float: right;
+	padding-top: 20px;
+			
+		font-weight: normal;
+	
+}
+
+
+	
+
+
+
+
+.homequicklinks {
+	margin-left: 0px!important;
+}
+
+#row1-box3 h2 {
+	text-align: center;
+	color: #ffffff;
+	margin: 10px 0px 10px 0px;
+	font-size: 22px;
+	text-transform: uppercase;
+		font-weight: 400;
+}
+
+#row2 {
+	width: 100%;
+	height: 392px;
+	float: left;
+/*	background-image: url(images/bg-row2-bg1.png);
+	background-repeat: repeat-y; */
+}
+
+#row2-box1-wrapper {
+	width: 55%;
+	float: left;
+	background-color: #063583;
+}
+
+#row2-box1 {
+	width: 586px;
+	height: 392px;
+	float: right;
+	padding-right: 24px;
+	padding-top: 30px;
+	color: #ffffff;
+	font-size: 19px;
+}
+
+.get-directions {
+	display: block;
+	margin-top: 30px;
+}
+
+.get-directions a:link { color: #ffffff; text-decoration: none; }
+.get-directions a:visited { color: #ffffff; text-decoration: none; }
+.get-directions a:hover { color: #0C92A5; text-decoration: none; }
+
+
+#row2-box1-left {
+	width: 50%;
+	float: left;
+	height: 150px;
+		margin-top: 55px;
+}
+
+#row2-box1-left h2 {
+	color: #0C92A6;
+	font-size: 21px;
+			margin-bottom: 25px;
+
+}
+
+#row2-box1-right h2 {
+	color: #0C92A6;
+		font-size: 21px;
+		margin-bottom: 25px;
+}
+
+#row2-box1-right {
+	width: 50%;
+	float: left;
+		height: 150px;
+			margin-top: 55px;
+}
+
+#row2-box1-left2 {
+	width: 50%;
+	float: left;
+	margin-top: 10px;
+}
+
+#row2-box1-right2 {
+	width: 50%;
+	float: left;
+		margin-top: 10px;
+}
+
+
+#row2-box2-wrapper {
+	width: 45%;
+	float: left;
+		background-color: #F1F1F1;
+}
+
+#row2-box2 {
+	width: 480px;
+	height: 392px;
+	float: left;
+	padding-top: 30px;	
+	padding-left: 50px;
+}
+
+
+
+	
+}

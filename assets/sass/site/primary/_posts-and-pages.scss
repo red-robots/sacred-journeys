@@ -1,0 +1,392 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+
+
+#banner-photo-sub {
+	width: 100%;
+	height: 100px;
+	overflow: hidden;
+	margin-top: 10px;
+	float: left;
+	position: relative;
+	
+}
+
+#banner-photo-sub img {
+	width: 200%;
+	height: auto;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#content-wrapper {
+	width: 100%;
+	float: left;
+}
+
+.entry-content {
+	width: 90%;
+	padding-left: 5%;
+	float: left;
+}
+
+.entry-content img {
+	width: 100%;
+}
+
+.resource {
+    width: 100%;
+    float: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+	margin-bottom: 15px;
+}
+
+.site-header {
+	width: 100%;
+	float: left;
+	@media screen and (min-width: $tabwidth) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+#header-button {
+	width: 190px;
+	height: 25px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background-color: #063583;
+	color: #ffffff;
+	z-index: 11000;
+	text-align: center;
+	font-size: 14px;
+	padding-top: 5px;
+	
+	-moz-border-radius: 0 0 10px 10px;
+border-radius: 0 0 10px 10px;
+}
+
+
+
+#logo img {
+	width: auto;
+	height: auto;
+}
+
+
+
+.site-info-content {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+.site-info {
+	height: 274px;
+	text-align: center;
+	background-image: url(images/bg-footer.jpg);
+	background-repeat: repeat-x;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.site-info a:link { color: #ffffff; text-decoration: none; }
+.site-info a:visited { color: #ffffff; text-decoration: none; }
+.site-info a:hover { color: #063583!important; text-decoration: none; }
+
+
+#row1 {
+	width: 100%;
+	float: left;
+}
+
+#row1-header {
+	padding-top: 15px;
+	width: 100%;
+	float: left;
+	padding-bottom: 30px;
+}
+
+#row1-feed {
+	width: 100%;
+	float: left;
+}
+
+#row1-header h1 {
+	margin-left: 10px;
+}
+
+
+
+.event-info {
+	color: #495B61;
+	text-transform: uppercase;
+	padding-top: 20px;
+}
+
+.event-row {
+	padding-bottom: 7px;
+}
+
+.learn-more-button {
+	width: 156px;
+	height: 37px;
+	position: absolute;
+	right: 45px;
+	bottom: 23px;
+	
+	font-family: 'Crimson Text', serif;
+	text-transform: uppercase;
+	text-align: center;
+	a {
+		display: block;
+		width: 156px;
+		height: 28px;
+		padding-top: 9px;
+		background-color: #003040;
+		text-align: center;	
+	}
+}
+#row1-box2-content {
+	width: 90%;
+	padding-left: 5%;
+	height: 87%;
+	overflow-y: auto;
+}
+
+#row1-box3 {
+		width: 96%;
+	margin-left: 3%;
+	float: right;
+	min-height: 200px;
+	background-color: #c0c0c0;
+		margin-bottom: 10px;
+}
+
+#row1-box3 h2 {
+	text-align: center;
+	color: #ffffff;
+	margin: 10px 0px 10px 0px;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.quick-link {
+	
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	text-align: left;
+
+}
+
+.quick-link a:link { color: #00303F; text-decoration: none; }
+.quick-link a:visited { color: #00303F; text-decoration: none; }
+.quick-link a:hover { color: #ffffff; text-decoration: none; }
+
+
+.quick-links-page {
+	margin-left: 40px;
+
+}
+
+
+.social-icons {
+	width: 100%;
+	float: left;
+	height: 41px;
+	padding-top: 10px;
+}
+
+.social-icons-content {
+	float: left;
+	width: 95%;
+	padding-right: 0px;
+	text-align: center;
+}
+
+#banner-photo {
+    width: 100%;
+	margin-top: 20px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+
+}
+#banner-text {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 1;
+    text-align: center;
+	padding-top: 30px;
+}
+.banner-text {
+	font-size: 20px;
+	color: $color-dark-blue;
+	line-height: 1.2;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	@media screen and (min-width: $tabwidth) {
+		font-size: 16px;
+		color: #FFFFFF;
+		width: 90%;
+	}
+	@media screen and (min-width: $midwidth) {
+		font-size: 22px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		font-size: 26px;
+		width: 70%;
+	}
+}
+#banner-wrapper {
+	width: 100%;
+	height: auto;
+	position:relative;
+	
+	@media screen and (min-width: $tabwidth) {
+		height: 100%;
+		position: absolute;
+		top: 0px;
+	    left: 0px;
+	    z-index: 10000;
+	    display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+.single-event #entry-event-image img {
+	width: 280px;
+	height: auto;
+}
+
+.single-page-content {
+	width: 100%;
+	float: left;
+	padding-bottom: 25px;
+}
+section.blog {
+	width: 100%;
+	float: left;
+	padding: 40px 0;
+	.blog-post {
+		width: 100%;
+		margin: 0 0 40px 0;
+		-webkit-box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.51);
+		-moz-box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.51);
+		box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.51);
+		background-color: #fff;
+		float: left;
+		.no-image {
+			&.content {
+				width: 100%;
+				@media screen and (min-width: $tabwidth) {
+					float: left;
+				}
+			}
+		}
+		.has-image {
+			&.image {
+				width: 100%;
+				@media screen and (min-width: $tabwidth) {
+					width: 30%;
+					float: left;
+				}
+			}
+			&.content {
+				width: 100%;
+				@media screen and (min-width: $tabwidth) {
+					width: 69%;
+					float: right;
+				}
+			}
+		}
+		.image {
+			
+			@media screen and (min-width: $tabwidth) {
+				
+				
+			}
+			img {
+				width: 100%;
+			}
+		}
+		.content {
+			padding: 20px 5%;
+			@media screen and (min-width: $tabwidth) {
+				
+			}
+			h2 {
+				font-size: 30px;
+				color: $color-dark-blue;
+			}
+		}
+		.readmore {
+			float: right;
+		}
+	}
+}
+section.resources {
+	width: 100%;
+	padding: 40px 0;
+	.resource {
+		width: 100%;
+		float: left;
+		margin: 0 0 30px 0;
+		.rcontent {
+			width: 100%;
+			float: left;
+			@media screen and (min-width: $tabwidth) {
+				width: 60%;
+				padding: 0 2%;
+			}
+		}
+		.image {
+			width: 100%;
+			
+			@media screen and (min-width: $tabwidth) {
+				width: 35%;
+				float: right;
+			}
+		}
+	}
+}
