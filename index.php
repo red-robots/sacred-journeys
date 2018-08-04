@@ -46,7 +46,7 @@ endif;
 	//echo $postid;
 	$wp_query = new WP_Query();
 	$wp_query->query(array(
-		'post_type'=>'post',
+		'post_type'=>'event',
 		'posts_per_page' => 4,
 		'paged' => $paged
 
@@ -54,10 +54,10 @@ endif;
 
 	if ($wp_query->have_posts()) : ?>
 	<section class="blog">
-	<?php while ($wp_query->have_posts()) :  $wp_query->the_post(); ?>
+	<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
 
-		<?php get_template_part('inc/blog-post'); ?>
+		<?php get_template_part('inc/event-post'); ?>
 
  	<?php endwhile; ?>
  	</section>
