@@ -49,13 +49,12 @@ a {
 /* Logo */
 .logo , h1.logo {
 	width: 290px;
-	height: 72px;
-	background-image: url(images/logo.png);	
 	margin: 10px auto;
-
+	img {
+		width: 100%;
+	}
 	@media screen and (min-width: $tabwidth) {
-		width: 290px;
-	height: 72px;
+		width: 350px;
 		float: left;
 		margin: 0;
 	}
@@ -64,15 +63,10 @@ a {
 	}
 }
 .logo a, h1.logo a {
-	width: 300px;
-	height: 200px;
+	width: 100%;
 	display: block;
-	text-indent: -9000px;
-	margin-top: -20px;
 
 	@media screen and (min-width: $tabwidth) {
-		width: 300px;
-		height: 200px;
 	}
 	@media screen and (min-width: $deskwidth) {
 		/*width: 1200px;*/

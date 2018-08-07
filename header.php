@@ -49,7 +49,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="logo">
 			<a href="<?php bloginfo('url'); ?>">
-				<img src="<?php bloginfo('template_url'); ?>/images/sacred-journeys.png" alt="" border="0">
+				<img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="" border="0">
 			</a> 
 		</div><!-- #logo -->
 		<nav id="site-navigation" class="main-navigation" role="navigation">
