@@ -8,6 +8,8 @@
  * @subpackage Twenty_Twelve
  * @since Twenty Twelve 1.0
  */
+
+$image = get_field('footer_image', 'option');
 ?>
 
 
@@ -20,6 +22,9 @@
 
 	<footer id="colophon" role="contentinfo">
 		<div class="site-info">
+		<?php if( $image ) { ?>
+			<img src="<?php echo $image['url']; ?>">
+		<?php } ?>
 			<div class="site-info-content">
 
 				<div id="footer-text"><?php the_field('footer_text', 'option'); ?></div>
