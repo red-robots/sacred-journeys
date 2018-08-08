@@ -46,20 +46,26 @@ if( !empty($image) ): ?>
 <div class="event-info single-page-info">
 
 <div class="event-row"><?php the_field("event_days"); ?></div>
-<div class="event-row"><?php 
-	if(get_field('start_date'))
+<div class="event-row"><?php
+
+	$startdate = get_field('start_date', false, false);
+	$startdate = new DateTime($startdate);
+	$enddate = get_field('end_date', false, false);
+	$enddate = new DateTime($enddate);
+
+	if($startdate)
 		{
-			$date = DateTime::createFromFormat('Ymd', get_field('start_date'));
-			echo $date->format('F j, Y');
+			
+			echo $startdate->format('F j, Y');
 			echo '';
 		}	 	 			 	 
 ?>
 <?php 
-	if(get_field('end_date'))
+	if($enddate)
 		{
-			$date = DateTime::createFromFormat('Ymd', get_field('end_date'));
+			
 			echo ' - ';
-			echo $date->format('F j, Y');
+			echo $enddate->format('F j, Y');
 		}	 	 			 	 
 ?></div>
 <div class="event-row"><?php the_field("time"); ?>    </div>  

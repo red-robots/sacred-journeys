@@ -38,7 +38,7 @@ endif;
 
 <div class="wrapper">
 
-	<div id="primary" class="site-content">
+	<div id="primary" class="site-content-full">
 		<div id="content" role="main">
 
 

@@ -27,7 +27,7 @@ get_header(); ?>
 
 <div class="wrapper">
 
-	<div id="primary" class="site-content">
+	<div id="primary" class="site-content-full">
 		<div id="content" role="main">
         	<div class="entry-content">
                 <h1><?php the_title(); ?></h1>

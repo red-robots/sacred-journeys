@@ -18,7 +18,7 @@ a {
 #topborder {
 	border-top: 4px solid $color-dark-blue;
 }
-.content-area {
+.content-area, .site-content {
 	width: 100%;
 	margin: 0px auto;
 	
@@ -42,7 +42,7 @@ a {
 		margin: 0;
 	}
 	@media screen and (min-width: $deskwidth) {
-		/*width: 1200px;*/
+		margin: 150px 0 0 0;
 	}
 }
 
@@ -223,12 +223,6 @@ a:hover {
 /* Page structure */
 .site {
 	background-color: #fff;
-}
-.site-content {
-	margin: 24px 0 0;
-}
-.widget-area {
-	margin: 24px 0 0;
 }
 
 #news-search {

@@ -18,25 +18,30 @@ get_header(); ?>
             
               
 
-				<?php get_template_part( 'content', get_post_format() ); ?>
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					
+
+					<div class="entry-content">
+						<h1><?php the_title(); ?></h1>
+						<?php the_content(); ?>
+					</div><!-- .entry-content -->
+
+					<footer class="entry-footer">
+						<?php //acstarter_entry_footer(); ?>
+					</footer><!-- .entry-footer -->
+				</article><!-- #post-## -->
                 
              
 
-				<nav class="nav-single">
-					<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentytwelve' ); ?></h3>
-					<span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twentytwelve' ) . '</span> %title' ); ?></span>
-					<span class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twentytwelve' ) . '</span>' ); ?></span>
-				</nav><!-- .nav-single -->
-
-				<?php comments_template( '', true ); ?>
+				
 
 			<?php endwhile; // end of the loop. ?>
             
-          </div>
+         
 
 		</div><!-- #content -->
 	</section><!-- #primary -->
- 
+ <?php get_sidebar(); ?>
 </div>  
     
 
