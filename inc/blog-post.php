@@ -9,7 +9,7 @@
 		 } ?>
 		 <div class="content <?php echo $postClass; ?>">
 		 	<h2><?php the_title(); ?></h2>
-		 	<?php the_content(); ?>
+		 	<?php the_excerpt(); ?>
 		 	<div class="readmore">
 		 		<a href="<?php the_permalink(); ?>">Read More</a>
 		 	</div>
