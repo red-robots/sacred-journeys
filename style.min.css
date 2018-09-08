@@ -1762,18 +1762,19 @@ a:hover,a:active{outline:0}
 .main-navigation{clear:both;display:block;text-align:center;width:100%;background-color:#fff}
 @media screen and (min-width:600px){.main-navigation{clear:none;width:auto;float:right}
 }@media screen and (min-width:1200px){.main-navigation{text-align:left}
-}.main-navigation .menu{-webkit-transition:all ease 1s;transition:all ease 1s;overflow:hidden;display:block}
+}.main-navigation .menu{-webkit-transition:all ease 1s;transition:all ease 1s;display:block}
 .main-navigation.toggled .menu{max-height:1000px}
 .main-navigation .menu{max-height:0}
 @media screen and (min-width:600px){.main-navigation .menu{max-height:1000px}
 }.main-navigation ul{display:none;list-style:none;margin:0;padding-left:0}
-@media screen and (min-width:600px){.main-navigation ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
-}.main-navigation ul ul{box-shadow:0 3px 3px rgba(0,0,0,0.2);float:left;position:absolute;top:1.5em;left:-999em;z-index:99999}
-.main-navigation ul ul ul{left:-999em;top:0}
+.main-navigation ul ul{box-shadow:0 3px 3px rgba(0,0,0,0.2);float:left;position:absolute;top:2em;left:-999em;z-index:99999}
+.main-navigation ul ul ul{left:-999em;top:0;width:200px}
+.main-navigation ul ul li{margin:10px 0}
 .main-navigation ul ul li:hover>ul,.main-navigation ul ul li.focus>ul{left:100%}
-.main-navigation ul ul a{width:200px}
-.main-navigation ul li:hover>ul,.main-navigation ul li.focus>ul{left:auto}
-.main-navigation li{position:relative;text-align:center;display:inline-block;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:0;text-transform:uppercase;font-family:"Open Sans",sans-serif;font-weight:300;width:100%}
+@media screen and (min-width:600px){.main-navigation ul ul li{clear:both}
+}.main-navigation ul ul a{width:200px}
+.main-navigation ul li:hover>ul,.main-navigation ul li.focus>ul{left:0;display:block;padding:20px 0;background-color:#fff}
+.main-navigation li{position:relative;text-align:center;display:inline-block;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:10px 0;text-transform:uppercase;font-family:"Open Sans",sans-serif;font-weight:300;width:100%}
 @media screen and (min-width:600px){.main-navigation li{line-height:3;width:auto}
 .main-navigation li:first-of-type{border:0}
 }.main-navigation a{display:block;text-decoration:none;padding:10px 0;color:#000;-webkit-transition:all ease .4s;transition:all ease .4s}

@@ -15,7 +15,7 @@
 	}
 	.menu {
 		@include transition(all ease 1s);
-		overflow: hidden;
+		// overflow: hidden;
 		display: block;
 	}
 	&.toggled .menu {
@@ -34,29 +34,32 @@
 		margin: 0;
 		padding-left: 0;
 		@media screen and (min-width: $tabwidth) {
-			display: flex;
+			// display: flex;
 		}
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
-			top: 1.5em;
+			top: 2em;
 			left: -999em;
 			z-index: 99999;
+
 
 			ul {
 				left: -999em;
 				top: 0;
+				width: 200px;
 			}
 
 			li {
+				margin: 10px 0;
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
 				}
 				@media screen and (min-width: $tabwidth) {
-		
+					clear: both;
 				}
 				@media screen and (min-width: $deskwidth) {
 					
@@ -85,7 +88,10 @@
 
 		li:hover > ul,
 		li.focus > ul {
-			left: auto;
+			left: 0;
+			display: block;
+			padding: 20px 0;
+			background-color: #fff;
 		}
 	}
 	li {
@@ -94,7 +100,7 @@
 		text-align: center;
 		display: inline-block;
 		hyphens: none;
-		padding: 0 ;
+		padding: 10px 0 ;
 		text-transform: uppercase;
 		font-family: $font-heading;
 		font-weight: 300;
